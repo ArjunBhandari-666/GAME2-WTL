@@ -44,7 +44,7 @@ function initBattle() {
 
       if (draggle.health <= 0) {
         queue.push(() => {
-          draggle.faint()
+          draggle.faint();
           window.parent.postMessage('win', '*');
         })
         queue.push(() => {
@@ -117,6 +117,7 @@ function animateBattle() {
   battleAnimationId = window.requestAnimationFrame(animateBattle)
   battleBackground.draw()
 
+  console.log(battleAnimationId)
 
   renderedSprites.forEach((sprite) => {
     sprite.draw()

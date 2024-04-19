@@ -27,7 +27,7 @@ const offset = {
 
 collisionsMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
-    if (symbol === 1025)
+    if (symbol === 1025 )
       boundaries.push(
         new Boundary({
           position: {
